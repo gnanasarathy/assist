@@ -4,7 +4,7 @@ from creater import supplier, destroyer
 app = Flask(__name__)
 
 
-@app.route('/add', methods=["GET", "POST"])
+@app.route('/', methods=["GET", "POST"])
 def add():
     if request.method == "POST":
         update_val = request.form.get("val")
